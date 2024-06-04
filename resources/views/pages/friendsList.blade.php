@@ -12,7 +12,7 @@
                             <img class="h-10 w-10 rounded-full border-4 border-white dark:border-gray-800 mx-auto my-4"
                                 src="{{ asset('profile_images/' . $friend->profile) }}" alt="Profile Image" />
                             <div class="ml-2 flex flex-col">
-                                <div class="leading-snug text-sm text-gray-200 font-bold">
+                                <div class="leading-snug text-xs text-gray-200 font-bold">
                                     {{ $friend->full_name }}
                                 </div>
                                 <div class="leading-snug text-sm text-gray-600  dark:text-gray-400">
@@ -23,13 +23,13 @@
                         <div class="friend">
                             @if (auth()->user()->hasFriend($friend->id))
                                 <button
-                                    class="friend-btn h-8 px-5 mr-4 text-sm font-bold text-red-400 border border-red-400 rounded-full hover:bg-red-100 hover:text-black"
+                                    class="friend-btn h-8 px-4 mr-4 text-xs font-bold text-red-400 border border-red-400 rounded-full hover:bg-red-100 hover:text-black"
                                     data-friend-id="{{ $friend->id }}" data-action="remove">
                                     Remove Friend
                                 </button>
                             @else
                                 <button
-                                    class="friend-btn h-8 px-5 mr-4 text-sm font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100 hover:text-black"
+                                    class="friend-btn h-8 px-4 mr-4 text-xs font-bold text-blue-400 border border-blue-400 rounded-full hover:bg-blue-100 hover:text-black"
                                     data-friend-id="{{ $friend->id }}" data-action="add">
                                     Add Friend
                                 </button>

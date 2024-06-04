@@ -54,9 +54,10 @@
         </button>
     </div>
 </form>
-{{-- google --}}
-<div class="relative flex items-center mt-4">
-    <a href="{{ route('google.auth') }}">
+
+{{-- Google --}}
+<div class="w-full max-w-md mx-auto mt-4">
+    <a href="{{ route('google.auth') }}" class="flex justify-center">
         <button
             class="flex items-center bg-white dark:bg-gray-900 border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
             <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -84,8 +85,10 @@
                 </g>
             </svg>
             <span>Continue with Google</span>
-        </button></a>
+        </button>
+    </a>
 </div>
+
 @if (session('login_success'))
     <script>
         const Toast = Swal.mixin({

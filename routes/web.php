@@ -40,6 +40,10 @@ Route::group(['middleware' => 'guest'], function () {
 
 });
 
+
+// Route::get('/login2', function () {
+//     return view('pages.login2');
+// });
 // Protected routes
 Route::middleware('auth')->group(function () {
 

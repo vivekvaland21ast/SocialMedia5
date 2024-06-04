@@ -44,8 +44,8 @@ class GoogleAuthController extends Controller
             }
         } catch (\Exception $e) {
             Log::error('Something went wrong: ' . $e->getMessage());
-            dd('Something went wrong: ' . $e->getMessage());
-            // return redirect()->route('login')->with('error', 'Something went wrong. Please try again later.');
+            // dd('Something went wrong: ' . $e->getMessage());
+            return redirect()->route('login')->with('error', 'Something went wrong. Please try again later.');
         }
     }
 
