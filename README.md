@@ -40,7 +40,15 @@ Before you begin, ensure you have the following installed on your system:
    php artisan key:generate
    ```
 
-6. Configure your `.env` file with your database credentials and any other necessary configurations.
+6. Configure your `.env` file with your database credentials and any other necessary configurations. Default `DB_USERNAME` is root, `DB_CONNECTION` is sqlite, `DB_PASSWORD` is empty.
+```bash
+   DB_CONNECTION=YOUR_CONNECTION_NAME
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=YOUR_DATABASE_NAME
+   DB_USERNAME=YOUR_USERNAME
+   DB_PASSWORD=YOUR_PASSWORD
+   ```
 
 7. Migrate the database:
 
@@ -52,6 +60,11 @@ Before you begin, ensure you have the following installed on your system:
 
    ```bash
    php artisan serve
+   ```
+9. For setup mail:
+
+   ```bash
+   QUEUE_CONNECTION=database
    ```
 
 Now you should be able to access the application at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
@@ -148,7 +161,7 @@ Special thanks to the Laravel community for providing a robust framework for bui
 
 ## Contact
 
-For any inquiries or support, please contact [vivek21.ast@example.com]([vivek21.ast@example.com).
+For any inquiries or support, please contact [vivek21.ast@gmail.com]([vivek21.ast@gmail.com).
 
 ---
 
