@@ -134,6 +134,9 @@ Users can edit or delete their own comments on posts, allowing them to manage th
 
 Users can reply to comments on posts, enabling threaded conversations and deeper engagement.
 
+### 18. Forgot Password
+Users can reset their password if they forget it by providing their email address. A reset password link will be sent to their email.
+
 ## Contributing
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve the project.
