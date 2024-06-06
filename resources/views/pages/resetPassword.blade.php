@@ -1,13 +1,4 @@
 @include('layouts.header')
-{{-- <form method="POST" action="{{ route('password.update') }}">
-    @csrf
-    <input type="hidden" name="token" value="{{ $token }}">
-    <input type="email" name="email" value="{{ old('email') }}" required>
-    <input type="password" name="password" required>
-    <input type="password" name="password_confirmation" required>
-    <button type="submit">Reset Password</button>
-</form> --}}
-
 <section class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen">
     <div class="container flex items-center justify-center px-6 mx-auto">
         <div class="w-full flex justify-center">

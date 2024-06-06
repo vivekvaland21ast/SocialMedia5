@@ -46,7 +46,7 @@ class FriendsController extends Controller
         $user = auth()->user();
 
         // Retrieve the user's friends
-        $friends = $user->friends; // Assuming 'friends' is the relationship defined in the User model
+        $friends = $user->friends;
 
         // Pass the friends to the view
         return view('friends', ['friends' => $friends]);
@@ -54,17 +54,7 @@ class FriendsController extends Controller
     public function fetchFriends()
     {
         $user = Auth::user();
-        $friends = $user->friends; // Assuming you have a relationship defined on the User model
+        $friends = $user->friends; 
         return response()->json(['friends' => $friends]);
     }
-    // public function archive($id)
-    // {
-    //     $post = Posts::find($id);
-    //     if ($post) {
-    //         $post->archive = true;
-    //         $post->save();
-    //         return response()->json(['success' => 'Post archived successfully!']);
-    //     }
-    //     return response()->json(['error' => 'Post not found!'], 404);
-    // }
 }

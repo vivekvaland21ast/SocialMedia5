@@ -34,21 +34,4 @@ class ArchiveController extends Controller
             return response()->json(['success' => false, 'message' => 'Failed to unarchive post'], 500);
         }
     }
-
-
-    // public function archive(Request $request)
-    // {
-    //     $postId = $request->input('postId');
-    //     $isArchived = $request->input('isArchived');
-
-    //     $post = Posts::find($postId);
-    //     if ($post) {
-    //         $post->is_archived = $isArchived;
-    //         $post->save();
-
-    //         return response()->json(['success' => true]);
-    //     } else {
-    //         return response()->json(['success' => false, 'message' => 'Post not found']);
-    //     }
-    // }
 }

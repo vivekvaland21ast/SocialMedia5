@@ -16,13 +16,9 @@
                             <span class="text-primary">S</span>ocial<span class="text-secondary">M</span>ate
                         </a>
                     </div>
-                    {{-- <div class="text-center text-xl font-semibold text-primary-400 z-30 flex-auto">
-                        Forgot Password
-                    </div> --}}
                     <div data-tab-content="" class="p-5">
                         <div class="block opacity-100" id="app" role="tabpanel">
-                            <form class="w-full max-w-md mx-auto" action="{{ route('password.email') }}"
-                                method="POST">
+                            <form class="w-full max-w-md mx-auto" action="{{ route('password.email') }}" method="POST">
                                 @csrf
                                 @if (session('status'))
                                     <div class="mb-4 text-sm text-green-600">

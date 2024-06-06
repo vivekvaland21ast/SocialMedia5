@@ -69,51 +69,9 @@ class ProfilesController extends Controller
         }
         // dd($profile);
 
-        // Save the changes
         $profile->save();
 
-        // Redirect back with success message
         return redirect()->back()->with('success', 'Profile updated successfully.');
     }
 
-    // old
-    // public function updateProfile(Request $request)
-    // {
-
-    //     $profile = Profiles::find(auth()->user()->id);
-
-    //     $profile->full_name = $request->input('fullname');
-    //     $profile->username = $request->input('username');
-    //     $profile->email = $request->input('email');
-
-    //     // Update password if new password is provided
-    //     if ($request->filled('newPassword')) {
-    //         // Update the password
-    //         $profile->password = Hash::make($request->input('newPassword'));
-    //     }
-
-    //     // Handle profile image upload
-    //     if ($request->hasFile('profileImage')) {
-
-    //         if ($request->filled('newPassword')) {
-
-    //             $profile->password = Hash::make($request->input('newPassword'));
-    //         }
-
-    //         if ($request->hasFile('profileImage')) {
-
-    //             $profileImage = $request->file('profileImage');
-    //             $imageName = time() . '_' . $profileImage->getClientOriginalName();
-    //             $profileImage->move(public_path('profile_images'), $imageName);
-    //         }
-
-    //         // Save the changes
-    //         $profile->save();
-
-    //         // Redirect back with success message
-    //         $profile->save();
-
-    //         return redirect()->back()->with('success', 'Profile updated successfully.');
-    //     }
-    // }
 }

@@ -54,7 +54,6 @@ class PostsController extends Controller
         $post->user_id = auth()->id();
         $post->save();
 
-        // Check if the request is an AJAX request
         if ($request->ajax()) {
             // Render the post partial view and return it as a JSON response
             $view = view('pages.postList', compact('post'))->render();

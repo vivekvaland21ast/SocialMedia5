@@ -43,9 +43,6 @@
                                                     liked your post
                                                 </p>
                                             </div>
-                                            {{-- <img class="object-cover flex item-end w-12 h-12 rounded-lg"
-                                                src="{{ asset('post_images/' . $notifications->data['post_image']) }}"
-                                                alt="Profile Image" /> --}}
                                         </div>
                                     </div>
                                 @endforeach
